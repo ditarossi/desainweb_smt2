@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!--css-->
+    <link type="text/css" rel="stylesheet" href="proyek.css">
+    <!--jquery-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" src="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" src="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!--teks slider-->
+
+
+    <!--java script-->
+    <script>
+    $( function() {
+      $( "#accordion" ).accordion();
+    } );
+    </script>
+    <script>
+    $( function() {
+        $( "#tabs" ).tabs();
+    } );
+    </script>
+    <!--Slider-->
+    <script>
+    $(document).ready(function(){
+        $(`.next`).on(`click`, function(){
+            var currentImg = $(`.active`);
+            var nextImg=currentImg.next();
+
+            if(nextImg.length){
+                currentImg.removeClass(`active`).css(`z-index`, -10);
+                nextImg.addClass(`active`).css(`z-index`, 10);
+            }
+        });
+
+        $(`.prev`).on(`click`, function(){
+            var currentImg = $(`.active`);
+            var prevImg=currentImg.prev();
+
+            if(prevImg.length){
+                currentImg.removeClass(`active`).css(`z-index`, -10);
+                prevImg.addClass(`active`).css(`z-index`, 10);
+            }
+        });
+    });
+    </script>
+   <!--slider text-->
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-left"><div class="logo">
+            <img src="logounsbarunew.png">
+            </div>
+    </div>
+        <div class="navbar-right">
+            <ul>
+                <li><a href="proyek.html">Home</a></li>
+                <li><a href="profil.html">Profile</a></li>
+                <li><a href="kontak.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h2 align="center"><button class="btn flat-btn">FAKULTAS KEGURUAN DAN ILMU PENDIDIKAN</button></h2>
+ 
+    <div class="slider-outer" align="center">
+        <img src="panahkirinew.png" class="prev" alt="Prev" width="50px" height="50px">
+        <div class="slider-inner">
+            <img src="fkip1new.jpg" class="active" >
+            <img src="fkip2new.jpg" height="30%" >
+            <img src="fkip3new.jpg" height="30%"> 
+        </div>
+        <img src="panahnew.png" class="next" alt="Next" width="50px" height="50px">
+
+    </div>
+
+    <br/>
+    <br/>
+    <!--<div id="wrapper">-->
+        <div id="bagiankiri">
+            <div class="section">
+                    <br/>
+                    <div id="accordion">
+                        <h3 align="left"><button class="flat-btn"><img src="panahbawah.png" height="15px">UMUM</button></h3>
+                            <div>
+                                <p>
+                                    "Menjadi pusat pengembangan ilmu, teknologi, dan seni di bidang keguruan dan ilmu pendidikan bereputasi internasional dengan berlandaskan pada nilai-nilai luhur budaya nasional."
+                                </p>
+                            </div>
+                            <h3 align="left"><button class="flat-btn"><img src="panahbawah.png" height="15px">PEMBELAJARAN</button></h3>
+                            <div>
+                                <p>
+                                    Menyelenggarakan pendidikan  dan  pembelajaran  yang  inovatif berdasarkan  perkembangan  mutakhir  di  bidang  keguruan  dan  ilmu pendidikan.
+                                </p>
+                            </div>
+                            <h3 align="left"><button class="flat-btn"><img src="panahbawah.png" height="15px">PENELITIAN</button></h3>
+                            <div>
+                                <p>
+                                    Menyelenggarakan penelitian  yang  menghasilkan  temuan  baru  di bidang  keguruan  dan  ilmu  pendidikan  
+                                </p>
+                            </div>
+                            <h3 align="left"><button class="flat-btn"><img src="panahbawah.png" height="15px">PENGABDIAN MASYARAKAT</button></h3>
+                            <div>
+                                <p>
+                                    Menyelenggarakan kegiatan  pengabdian  kepada  masyarakat  dalam bidang  keguruan  dan  ilmu  pendidikan  untuk  meningkatkan  mutu pendidikan.
+                                </p>
+                            </div>
+                            </div>
+            </div>
+        </div>
+        <div id="bagiankanan">
+            <div class="section">
+                    <div id="tabs">
+                        <h3 align="center"><button class="flat-btn">SISTEM INFORMASI</button></h3>
+                        <aside class="side-nav">
+                            <ul>
+                                <li><a href="#tabs-1">Adiminstrasi Wisuda</a></li>
+                                <li><a href="#tabs-2">Adminjur</a></li>
+                                <li><a href="#tabs-3">Pangkalan Data</a></li>
+                                <li><a href="#tabs-4">Anjungan Pimpinan</a></li>
+                                <li><a href="#tabs-5">Tracer Alumni</a></li>
+                            </ul>
+                        </aside>
+                        <br/>
+               <div id="tabs-1">
+                    Dapat diakses melalui :
+                   </p>
+                   <p>
+                    <a href="https://wisuda.fkip.uns.ac.id">https://wisuda.fkip.uns.ac.id</a>
+                   </p>
+                   <p>
+                    Sistem informasi ini dikembangkan guna membantu pelayanan administrasi wisuda.
+                   </p>
+               </div>
+               <div id="tabs-2">
+                <p>
+                    Dapat diakses melalui : 
+                </p>
+                <p>
+                    <a href="https://adminjur.fkip.uns.ac.id">https://adminjur.fkip.uns.ac.id</a>
+                </p>
+                <p>
+                    Sistem informasi ini dikembangkan guna membantu pelayanan administrasi.
+                </p>
+                </div>
+               <div id="tabs-3">
+                    <p>
+                        Sistem ini dapat diakses melalui :
+                    </p>
+                    <p>
+                        <a href="https://pdf.fkip.uns.ac.id">https://pdf.fkip.uns.ac.id</a>
+                    </p>
+                    <p>
+                        Sistem Informasi Penunjang Borang Akreditasi ini berfungsi sebagai reporting system terkait data semua kegiatan akademik.
+                    </p>
+                    <p>
+                        Tujuannya menyajikan data kegiatan akademik sebagai penunjang evaluasi.
+                    </p>
+                </div>
+                <div id="tabs-4">
+                    <p>
+                        Dapat diakses melalui : 
+                    </p>
+                    <p>
+                        <a href="https://anjungan.fkip.uns.ac.id">https://anjungan.fkip.uns.ac.id</a>
+                    </p>
+                    <p>
+                        Sistem ini berfungsi untuk mengetahui agenda para pimpinan fakultas.
+                    </p>
+                </div>
+                <div id="tabs-5">
+                    <p>
+                        Dapat diakses melalui : 
+                    </p>
+                    <p>
+                        <a href="https://legalisir.fkip.uns.ac.id">https://legalisir.fkip.uns.ac.id</a>
+                    </p>
+                    <p>
+                        Sistem ini berfungsi untuk membantu para laumni untuk proses administrasi legalisir yang secara otomatis akan menghimpun data alumni.
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!--</div>-->
+        <h3 align="center"><button class="btn rounded-btn">GOOD NEWS!</button></h3>
+        <br/>
+        <br/>
+        <!--slider berita-->
+        <div id="slider">
+            <div class="container">
+              <div class="slide">
+                <h3 align="center">Kerja Sama FKIP dengan PT.BUMA</h3>
+                <p>
+                    Perkembangan jaman memberikan dampak terhadap hubungan dunia pendidikan dan dunia industri. Menanggapi hal tersebut, Universitas Sebelas Maret (UNS) yang diinisiasi oleh Teaching Factory (TeFa) Prodi Pendidikan Teknik Mesin UNS malakukan upaya untuk menjalain hubungan baik terhadap dunia industri maupun lembaga pendidikan lain.
+
+                    Hal tersebut disampaikan Dekan Fakultas Keguruan dan Ilmu Pendidikan (FKIP UNS), Dr. Mardiyana, M.Si. dalam membuka diskusi persiapan MoU antara Universitas Sebelas Maret dan PT. Bukit Makmur Mandiri Utama (PT. BUMA), serta MoU antara Universitas Sebelas Maret dan PT King Manufacture di UNS pada Kamis, 30 januari 2020.
+                    
+                    Dalam diskusi tersebut, dibahas bentuk kerjasama yang akan dilakukan antar lembaga yang meliputi bidang Penelitian, Pelatihan dan Pengembangan Pendidikan. Kerjasama bidang penelitian meliputi riset spare part, waste management, renewable energy, dan lainnya. Kerjasama bidang Pelatihan sesuai kebutuhan keilmuan dan kompetensi yang dibutuhkan. Dan kerjasama bidang pengembangan pendidikan yang meliputi praktik kerja bagi mahasiswa, hibah fasilitas praktikum, serta hibah peralatan habis pakai.
+                </p>
+              </div>
+              <div class="slide">
+                <h3 align="center">Turnamen Futsal Antar Prodi</h3>
+                <p>
+                    Turnamen futsal yang diadakan di Gelora Pendidikan Fakultas Keguruan dan Ilmu Pendidikan Universitas Sebelas Maret Selasa 10 Maret 2020 berlangsung cukup meriah. Peserta futsal merupakan perwakilan seluruh prodi yang ada di FKIP UNS. Tercatat ada 24 perwakilan prodi yang mengikuti turnamen futsal tersebut. Penonton yang berasal dari kalangan mahasiswa, dosen beserta staf-staf pendidikan ikut memeriahkan suasana.
+                </p>
+              </div>
+              <div class="slide">
+                <h3 align="center">Green Campus Dalam Rangka Dies Natalis ke-44</h3>
+               <p>
+                Dalam rangka memeriahkan acara Dies Natalies UNS ke-44, Fakultas Keguruan dan Ilmu Pendidikan (FKIP) UNS menyelenggarakan kegiatan Green Campus. Acara ini diselenggarakan di Kampus IV FKIP UNS dalam wujud penanaman pohon pada kamis, 5 Maret 2020.
+
+                Acara tersebut dibuka dengan kegiatan senam sehat bersama dan dihadiri langsung oleh jajaran pimpinan FKIP UNS. Sejumlah 40 lubang disiapkan untuk penanaman pohon bagi seluruh peserta, dosen, dan mahasiswa Program Studi PGSD, PG PAUD, serta pengurus BEM FKIP UNS
+                </p>
+              </div>
+            </div>
+        </div>
+        <br/>
+        <div class="footer2">
+            <div class="column2">
+                <div id="more"><a href="https://fkip.uns.ac.id/2020/03/green-campus-fkip-uns/">Green Campus Dalam Rangka Dies Natalis ke-44</a></div>
+            </div>
+            <div class="column2">
+                <div id="more"><a href="https://fkip.uns.ac.id/2020/02/kerjasama-uns-dengan-pt-buma-dan-pt-king-manufacture/">Kerja Sama FKIP dengan PT.BUMA</a></div>
+            </div>
+            <div class="column2">
+                <div id="more"><a href="https://fkip.uns.ac.id/2020/03/turnamen-futsal-prodi-fkip-uns/">Turnamen Futsal Antar Prodi</a></div>
+            </div>
+        </div>
+    
+          <br/>
+          <br/>
+          <footer>
+              <div id="column">
+                <h2>FKIP</h2>
+                <p>
+                    FKIP UNS Merupakan salah satu fakultas yang ada di Universitas Sebelas Maret Surakarta. Dimana di dalamnya terdapat beberapa Program Studi yang mampu menjadikan mahasiswanya lebih kompeten    
+                </p>
+            </div>
+            <div id="column">
+                <h2>Contact Us</h2>
+                <p>
+                    Telp: (0271) 669124 / 648939
+                </p>
+                <p>
+                  E-Mail: fkip@fkip.uns.ac.id
+              </p>
+            </div>
+          </footer>
+</body>
+</html>
